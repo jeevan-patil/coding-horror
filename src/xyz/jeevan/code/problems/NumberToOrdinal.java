@@ -10,11 +10,11 @@ public class NumberToOrdinal {
   private static Logger log = Logger.getLogger("NumberToOrdinal");
 
   public static void main(String[] args) {
-    log.info(new NumberToOrdinal().convert(113));
+    log.info(new NumberToOrdinal().convert(13));
   }
 
   String convert(final int number) {
-    String[] ordinals = {"th", "st", "nd", "th", "th", "th", "th", "th", "th", "th"};
+    String[] ordinals = {"th", "st", "nd", "rd", "th", "th", "th", "th", "th", "th"};
     int modBy100 = number % 100;
 
     switch (modBy100) {
