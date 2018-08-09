@@ -13,7 +13,7 @@ public class ReversePolishNotationCalculator {
   private static Logger log = Logger.getLogger("ReversePolishNotationCalculator");
 
   public static void main(String[] args) {
-    final String expression = "1 2.5 3 + -";
+    final String expression = "1 2 3 + -";
     log.info(expression + " => " + new ReversePolishNotationCalculator().evaluate(expression));
   }
 
@@ -24,7 +24,7 @@ public class ReversePolishNotationCalculator {
 
     Stack<Double> operands = new Stack<>();
 
-    String[] tokens = expression.split(" ");
+    String[] tokens = expression.split("\\s+");
     for (String token : tokens) {
 
       switch (token) {
