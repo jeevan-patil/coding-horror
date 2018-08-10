@@ -13,7 +13,7 @@ public class ReversePolishNotationCalculator {
   private static Logger log = Logger.getLogger("ReversePolishNotationCalculator");
 
   public static void main(String[] args) {
-    final String expression = "1 2 3 + -";
+    final String expression = "6 3 /";
     log.info(expression + " => " + new ReversePolishNotationCalculator().evaluate(expression));
   }
 

@@ -1,4 +1,4 @@
-package xyz.jeevan.code.puzzles;
+package xyz.jeevan.code.problems;
 
 import java.util.LinkedList;
 import java.util.List;
